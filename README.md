@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# Meet features
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## FEATURE 2: SHOW/HIDE AN EVENT'S DETAILS
 
-## Available Scripts
+As a user, I would like to be able to show/hide event details so that I can see more/less information about an event
 
-In the project directory, you can run:
+**Scenario 1:** 
+**Given** 
+**when** 
+**then** 
 
-### `npm start`
+**Scenario 2:** 
+**Given** 
+**when**
+**then** 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Scenario 3:**
+**Given**
+**when**
+**then**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## FEATURE 3: SPECIFY NUMBER OF EVENTS
 
-### `npm test`
+As a user, I would like to be able to specify the number of events I want to view in the app so that I can see more or fewer events in the events list at once.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Scenario 1:** 
+**Given** 
+**when** 
+**then** 
 
-### `npm run build`
+**Scenario 2:** 
+**Given** 
+**when**
+**then** 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Scenario 3:**
+**Given**
+**when**
+**then**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## FEATURE 4: USE THE APP WHEN OFFLINE
 
-### `npm run eject`
+As a user, I would like to be able to use the app when offline so that I can see the events I viewed the last time I was online.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Scenario 1:** 
+**Given** 
+**when** 
+**then** 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Scenario 2:** 
+**Given** 
+**when**
+**then** 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Scenario 3:**
+**Given**
+**when**
+**then**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## FEATURE 5: ADD AN APP SHORTCUT TO THE HOME SCREEN
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+As a user, I would like to be able to add the app shortcut to my home screen so that I can open the app faster.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Scenario 1:** 
+**Given** 
+**when** 
+**then** 
 
-### Code Splitting
+**Scenario 2:** 
+**Given** 
+**when**
+**then** 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Scenario 3:**
+**Given**
+**when**
+**then**
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## FEATURE 6: DISPLAY CHARTS VISUALIZING EVENT DETAILS
 
-### Making a Progressive Web App
+As a user, I would like to be able to see a chart showing the upcoming events in each city so that I know what events are organized in which city.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Scenario 1:** 
+**Given** 
+**when** 
+**then** 
 
-### Advanced Configuration
+**Scenario 2:** 
+**Given** 
+**when**
+**then** 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Scenario 3:**
+**Given**
+**when**
+**then**

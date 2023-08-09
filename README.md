@@ -119,3 +119,7 @@ Show a chart with the number of upcoming events in each city.
 **Given** there are events loaded on the app
 **when** the data visualization view is opened
 **then** a chart will display the loaded events based on location city
+
+## SERVERLESS FUNCTIONS
+
+This app will utilize lambda functions to communicate with the Google Calendar API to fetch event data to display in the app as well as handle all authentication and authorization. The use of lambda functions in this instance will help reduce the cost and work required with hosting, setting up, and maintaining a designated backend server.

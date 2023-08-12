@@ -15,7 +15,7 @@ const Event = ({ event }) => {
       {detailsShowing ? (
         <div>
           <h4>About event:</h4>
-          <a>See details on Google Calendar</a>
+          <a href={event.htmlLink}>See details on Google Calendar</a>
           <p>{event.description}</p>
           <button onClick={handleDetailsButtonClicked}>hide details</button>
         </div>

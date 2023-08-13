@@ -52,6 +52,17 @@ describe("<CitySearch /> component", () => {
     }
   });
 
+  test('renders only "See all cities" item if no search results match', async () => {
+    const user = userEvent.setup();
+    const allEvents = await getEvents();
+    const allLocations = extractLocations(allEvents);
+    CitySearchComponent.rerender(<CitySearch allLocations={allLocations} />);
+    const cityTextBox = CitySearchComponent.queryByRole("textbox");
+    await user.type(cityTextBox, "Paris, France");
+    const suggestionListItems = CitySearchComponent.queryAllByRole("listitem");
+    expect(suggestionListItems).toHaveLength(1);
+  });
+
   test("renders the suggestion text in the textbox upon clicking on the suggestion", async () => {
     const user = userEvent.setup();
     const allEvents = await getEvents();

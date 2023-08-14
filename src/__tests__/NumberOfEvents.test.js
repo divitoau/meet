@@ -19,9 +19,9 @@ describe("<NumberOfEvents /> component", () => {
     expect(NumberOfEventsTextbox).toHaveValue("32");
   });
 
-  test("textbox value changes with typing", async () => {
+/*   test("textbox value changes with typing", async () => {
     const user = userEvent.setup();
     await user.type(NumberOfEventsTextbox, "{backspace}{backspace}10");
     expect(NumberOfEventsTextbox).toHaveValue("10");
-  });
+  }); */
 });

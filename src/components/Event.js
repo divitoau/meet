@@ -15,12 +15,18 @@ const Event = ({ event }) => {
       {detailsShowing ? (
         <div>
           <h4>About event:</h4>
-          <a href={event.htmlLink} target="_blank">See details on Google Calendar</a>
+          <a href={event.htmlLink} target="_blank">
+            See details on Google Calendar
+          </a>
           <p className="details">{event.description}</p>
-          <button onClick={handleDetailsButtonClicked}>hide details</button>
+          <button className="details-btn" onClick={handleDetailsButtonClicked}>
+            hide details
+          </button>
         </div>
       ) : (
-        <button className="details-btn" onClick={handleDetailsButtonClicked}>show details</button>
+        <button className="details-btn" onClick={handleDetailsButtonClicked}>
+          show details
+        </button>
       )}
     </li>
   );

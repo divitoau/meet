@@ -9,7 +9,11 @@ describe("<NumberOfEvents /> component", () => {
   let NumberOfEventsTextbox;
   beforeEach(() => {
     NumberOfEventsComponent = render(
-      <NumberOfEvents currentNOE={32} setCurrentNOE={() => {}} />
+      <NumberOfEvents
+        setErrorAlert={() => {}}
+        currentNOE={32}
+        setCurrentNOE={() => {}}
+      />
     );
     NumberOfEventsTextbox = NumberOfEventsComponent.queryByRole("textbox");
   });
@@ -22,7 +26,9 @@ describe("<NumberOfEvents /> component", () => {
     expect(NumberOfEventsTextbox).toHaveValue("32");
   });
 
-/*   test("textbox value changes with typing", async () => {
+  // this component test stopped working after integration testing. it functions as expected but i don't know why the test fails regardless. havent yet found a solution
+
+  /*   test("textbox value changes with typing", async () => {
     const user = userEvent.setup();
     await user.type(NumberOfEventsTextbox, "{backspace}{backspace}10");
     expect(NumberOfEventsTextbox).toHaveValue("10");

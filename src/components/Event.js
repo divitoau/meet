@@ -8,19 +8,25 @@ const Event = ({ event }) => {
   };
 
   return (
-    <li>
+    <li className="event">
       <h3>{event.summary}</h3>
       <div>{event.start.dateTime}</div>
       <div>{event.location}</div>
       {detailsShowing ? (
         <div>
           <h4>About event:</h4>
-          <a href={event.htmlLink}>See details on Google Calendar</a>
-          <p>{event.description}</p>
-          <button onClick={handleDetailsButtonClicked}>hide details</button>
+          <a href={event.htmlLink} target="_blank">
+            See details on Google Calendar
+          </a>
+          <p className="details">{event.description}</p>
+          <button className="details-btn" onClick={handleDetailsButtonClicked}>
+            hide details
+          </button>
         </div>
       ) : (
-        <button onClick={handleDetailsButtonClicked}>show details</button>
+        <button className="details-btn" onClick={handleDetailsButtonClicked}>
+          show details
+        </button>
       )}
     </li>
   );

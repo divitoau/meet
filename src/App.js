@@ -5,6 +5,7 @@ import NumberOfEvents from "./components/NumberOfEvents";
 import "./App.css";
 import { useEffect, useState } from "react";
 import { extractLocations, getEvents } from "./api";
+import ExampleComponent from "./components/OOPExampleComponent";
 
 const App = () => {
   const [events, setEvents] = useState([]);
@@ -28,6 +29,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <ExampleComponent />
       <CitySearch allLocations={allLocations} setCurrentCity={setCurrentCity} />
       <NumberOfEvents currentNOE={currentNOE} setCurrentNOE={setCurrentNOE} />
       <EventList events={events} />

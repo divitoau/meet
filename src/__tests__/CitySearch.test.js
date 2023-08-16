@@ -8,7 +8,13 @@ import { extractLocations, getEvents } from "../api";
 describe("<CitySearch /> component", () => {
   let CitySearchComponent;
   beforeEach(() => {
-    CitySearchComponent = render(<CitySearch allLocations={[]} />);
+    CitySearchComponent = render(
+      <CitySearch
+        allLocations={[]}
+        setInfoAlert={() => {}}
+        setCurrentCity={() => {}}
+      />
+    );
   });
 
   test("renders text input", () => {
@@ -35,7 +41,13 @@ describe("<CitySearch /> component", () => {
     const user = userEvent.setup();
     const allEvents = await getEvents();
     const allLocations = extractLocations(allEvents);
-    CitySearchComponent.rerender(<CitySearch allLocations={allLocations} />);
+    CitySearchComponent.rerender(
+      <CitySearch
+        allLocations={allLocations}
+        setInfoAlert={() => {}}
+        setCurrentCity={() => {}}
+      />
+    );
     const cityTextBox = CitySearchComponent.queryByRole("textbox");
     await user.type(cityTextBox, "Berlin");
     const suggestions = allLocations
@@ -56,7 +68,13 @@ describe("<CitySearch /> component", () => {
     const user = userEvent.setup();
     const allEvents = await getEvents();
     const allLocations = extractLocations(allEvents);
-    CitySearchComponent.rerender(<CitySearch allLocations={allLocations} />);
+    CitySearchComponent.rerender(
+      <CitySearch
+        allLocations={allLocations}
+        setInfoAlert={() => {}}
+        setCurrentCity={() => {}}
+      />
+    );
     const cityTextBox = CitySearchComponent.queryByRole("textbox");
     await user.type(cityTextBox, "Paris, France");
     const suggestionListItems = CitySearchComponent.queryAllByRole("listitem");
@@ -68,7 +86,11 @@ describe("<CitySearch /> component", () => {
     const allEvents = await getEvents();
     const allLocations = extractLocations(allEvents);
     CitySearchComponent.rerender(
-      <CitySearch allLocations={allLocations} setCurrentCity={() => {}} />
+      <CitySearch
+        allLocations={allLocations}
+        setInfoAlert={() => {}}
+        setCurrentCity={() => {}}
+      />
     );
     const cityTextBox = CitySearchComponent.queryByRole("textbox");
     await user.type(cityTextBox, "Berlin");

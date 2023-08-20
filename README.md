@@ -1,3 +1,6 @@
+A progressive web app built using React through a test-driven development process. The backend of this app makes use of AWS Lambda functions to fetch data via the Google Calendar API from the CareerFoundry events calendar.
+The app shows users upcoming events in cities around the world. User can filter events by location, adjust the amount of events displayed, and can view charts displaying information about the locations and topics of the different events available. The app is able to function while offline and allows users to create an icon on their homescreen.
+
 # Meet features
 
 ## FEATURE 1: FILTER EVENTS BY CITY
